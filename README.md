@@ -65,7 +65,7 @@
 
 ---
 ## 📸 Demo
-(Add screenshots or a GIF showing how it works)
+https://res.cloudinary.com/dub9ymu0j/video/upload/v1743009727/prototype_-_Made_with_Clipchamp_xagmhb.mp4
 
 ---
 ## 📜 License
