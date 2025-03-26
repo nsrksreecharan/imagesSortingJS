@@ -65,7 +65,7 @@
 
 ---
 ## 📸 Demo
-https://res.cloudinary.com/dub9ymu0j/video/upload/v1743009727/prototype_-_Made_with_Clipchamp_xagmhb.mp4
+<video src="https://github.com/your-username/your-repo/raw/main/assets/video.mp4" controls width="600"></video>
 
 ---
 ## 📜 License
