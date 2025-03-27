@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- 
+    Basic File Management 
+    functionality 
+    --HOME Screen functionality
+        file creation with add button in home page
+        searching files in the files list
+        files preview in home
+        files deletion
+        files editing
+        files exporting
+        
+    --File Screen functionality
+        drag and drop files from computer
+        adding images to the file
+        formating font in the file screen
+        resizing the images 
+        insert table
+        auto saving files in local storage
+        drawing on the file
+        undo and redo
+    --
+
+-!-->
+<html>
+    <head>
+        <link id="page-style" rel="stylesheet" href="App.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="main-container">
+                <h1>Filter the Required Images by Uploading them Here</h1>
+                <!-- <button id="openPopup">Open Popup</button> -->
+                <input type="file" id="folderInput" multiple webkitdirectory directory />
+            </div>
+
+        
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close hide" id="closePopup">&times;</span>
+                    <h2 ><p id="">Images</p>Preview <span id="pageNo"></span>/<span id="totalPages"></span></h2>
+                    <div class="previewContent">
+                        <div id="uploadedImages" class="imagesContainer">
+                            <p>Uploaded Images</p>
+                            <ul id="uploadedList" class="imagesList">
+
+                            </ul>
+                        </div>
+                        <div id="imagePreviewContainer" class="imagePreviewContainer">
+                            <input id="fileName" change="handleFileNameChange()" />
+                            <div id="" class="sildeContainer">
+                                <div>
+                                    <button id="previousBtn" class="prevNextBtn disableBtn">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img id="imagePreview" src="" class="imagePreview"/>
+                                </div>
+                                <div>
+                                    <button id="nextBtn" class="prevNextBtn">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="buttonsContainer">
+                                <button id="acceptBtn" class="acceptBtn"> Accept</button>
+                                <button id="rejectBtn" class="rejectBtn"> Reject</button>
+                            </div>
+                            
+                        </div>
+                        <div id="reachedEnd"></div>
+                        <div  id="selectedImages" class="imagesContainer">
+                            <div class="list-header">
+                                <p>Selected Images</p>
+                                <button id="export" class="exportBtn hide">Export  <i class="fa-solid fa-file-export" style="font-size: 15px;"></i></button>
+                            </div>
+                            <ul id="selectedList" class="imagesList">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <script src="App.js"></script>
+    </body>
+</html>
